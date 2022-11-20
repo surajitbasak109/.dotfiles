@@ -61,6 +61,15 @@ ipinfo() {
 }
 
 alias myip=ip-internal
+alias yt='youtube-dl --extract-audio --add-metadata --xattrs --embed-thumbnail --audio-quality 0 --audio-format mp3'
+alias ytv='youtube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --add-metadata'
+alias upgrade='sudo apt update && sudo apt upgrade'
+
+alias q=exit
+alias e=nvim
+alias php7.4=/usr/bin/php7.4
+alias ti='php artisan ti'
+alias rl='php artisan r:l'
 
 # open_with_fzf() {
 #     fd -t f -H -I | fzf -m --preview="xdg-mime query default {}" | xargs -ro -d "\n" xdg-open 2>&-
