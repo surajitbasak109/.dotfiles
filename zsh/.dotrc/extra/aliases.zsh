@@ -60,6 +60,11 @@ ipinfo() {
     ip-internal && ip-external
 }
 
+vf() { fzf | xargs -r -I % $EDITOR % ;}
+gadd() { git status -s | fzf -m | awk '{print $2}' | xargs git add && git status -s}
+greset() { git status -s |  fzf -m | awk '{print $2}' |xargs git reset && git status -s}
+
+
 alias myip=ip-internal
 alias yt='youtube-dl --extract-audio --add-metadata --xattrs --embed-thumbnail --audio-quality 0 --audio-format mp3'
 alias ytv='youtube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --add-metadata'
@@ -70,6 +75,17 @@ alias e=nvim
 alias php7.4=/usr/bin/php7.4
 alias ti='php artisan ti'
 alias rl='php artisan r:l'
+alias c='f() { cd $1 && clear && pwd && ls -lht };f'
+alias w='clear && curl "wttr.in/?pq"'
+alias m='clear && curl "wttr.in/moon?pq"'
+alias ignore='curl https://www.gitignore.io/api/vim,node,data,emacs,python,pycharm,executable,sublimetext,visualstudio,visualstudiocode > .gitignore'
+alias cat=batcat
+
+alias tls=tmux ls
+alias ta='tmux attach -t "$(tmux ls | cut -d : -f1 | fzf)"'
+alias sa='bash ~/.machines/"$(ls ~/.machines | fzf)"'
+alias tn='tmux new -s $1'
+
 
 # open_with_fzf() {
 #     fd -t f -H -I | fzf -m --preview="xdg-mime query default {}" | xargs -ro -d "\n" xdg-open 2>&-

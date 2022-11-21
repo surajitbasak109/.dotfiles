@@ -95,4 +95,9 @@ lspconfig.clangd.setup({
   capabilities = M.capabilities,
 })
 
+lspconfig.vls.setup({
+  on_attach = M.on_attach,
+  capabilities = M.capabilities,
+})
+
 return M

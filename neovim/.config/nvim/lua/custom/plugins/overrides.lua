@@ -17,6 +17,8 @@ M.treesitter = {
     "norg",
     "tsx",
     "typescript",
+    "php",
+    "vue",
   },
 }
 
@@ -87,6 +89,8 @@ M.mason = {
     "json-lsp",
     "intelephense",
     "tailwindcss-language-server",
+    "vls",
+    "vue-language-server",
 
     -- shell
     "shfmt",

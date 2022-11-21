@@ -63,6 +63,8 @@ M.general = {
     ["<A-\\>"] = { "<CMD>split<CR>", "Split pane horizontally" },
     ["<leader>o"] = { "o<ESC>", "Inserts blank line below" },
     ["<leader>O"] = { "O<ESC>", "Inserts blank line above" },
+    ["<leader>wz"] = { ":set wrap!<CR>", "Toggle wrap" },
+    ["<leader>wt"] = { ":set shiftwidth=4<CR>", "Set Tabsize to 4" },
   },
 
   i = {
