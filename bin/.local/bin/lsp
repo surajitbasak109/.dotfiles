@@ -69,7 +69,7 @@ help() {
     yaml                Setup yaml-language-server
     shell               Setup shellcheck and shfmt
     "
-    echo "Give a star @ https://github.com/numToStr/dotfiles"
+    echo "Give a star @ https://github.com/surajitbasak109/.dotfiles"
 }
 
 main() {
