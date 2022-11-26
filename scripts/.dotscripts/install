@@ -7,7 +7,6 @@ set -e
 cd "$(dirname "$0")/../.."
 
 export DOTFILES=$(pwd -P)
-echo $DOTFILES
 TARGET=$HOME
 
 # List of packages that has to installed via `stow`
@@ -31,5 +30,5 @@ for F in $DOTFILES_DIRS ; do
     stow -D --dotfiles --dir $DOTFILES --target $TARGET $F 2>/dev/null
 
     # Installed new links
-    stow --dotfiles --dir $DOTFILES --target $TARGET $F
+    stow --dotfiles --dir $DOTFILES --target $TARGET $F 2>/dev/null
 done
