@@ -1,3 +1,4 @@
+local tailwindcssSetupConfig = require('custom.plugins.nvim-tailwindcss')
 local present, lspconfig = pcall(require, "lspconfig")
 
 if not present then
@@ -64,40 +65,25 @@ lspconfig.sumneko_lua.setup {
   },
 }
 
-lspconfig.intelephense.setup({
-  on_attach = M.on_attach,
-  capabilities = M.capabilities,
-  flags = {
-    debounce_text_changes = 150,
-  },
-  settings = {
-    intelephense = {
-      -- Add wordpress to the list of stubs
-      stubs = {
-        "apache", "bcmath", "bz2", "calendar", "com_dotnet", "Core", "ctype", "curl", "date",
-        "dba", "dom", "enchant", "exif", "FFI", "fileinfo", "filter", "fpm", "ftp", "gd", "gettext",
-        "gmp", "hash", "iconv", "imap", "intl", "json", "ldap", "libxml", "mbstring", "meta", "mysqli",
-        "oci8", "odbc", "openssl", "pcntl", "pcre", "PDO", "pdo_ibm", "pdo_mysql", "pdo_pgsql", "pdo_sqlite", "pgsql",
-        "Phar", "posix", "pspell", "readline", "Reflection", "session", "shmop", "SimpleXML", "snmp", "soap",
-        "sockets", "sodium", "SPL", "sqlite3", "standard", "superglobals", "sysvmsg", "sysvsem", "sysvshm", "tidy",
-        "tokenizer", "xml", "xmlreader", "xmlrpc", "xmlwriter", "xsl", "Zend OPcache", "zip", "zlib",
-        "wordpress", "phpunit",
-      },
-      diagnostics = {
-        enable = true,
-      },
-    }
+local servers = { "html", "cssls", "clangd", "jsonls", "tsserver", 'intelephense', 'bashls', 'vls' }
+
+for _, lsp in ipairs(servers) do
+  lspconfig[lsp].setup {
+    on_attach = M.on_attach,
+    capabilities = M.capabilities,
   }
-})
+end
 
-lspconfig.clangd.setup({
-  on_attach = M.on_attach,
-  capabilities = M.capabilities,
-})
+lspconfig.tailwindcss.setup(tailwindcssSetupConfig)
 
-lspconfig.vls.setup({
-  on_attach = M.on_attach,
-  capabilities = M.capabilities,
-})
+-- lspconfig.clangd.setup({
+--   on_attach = M.on_attach,
+--   capabilities = M.capabilities,
+-- })
+-- --
+-- lspconfig.vls.setup({
+--   on_attach = M.on_attach,
+--   capabilities = M.capabilities,
+-- })
 
 return M

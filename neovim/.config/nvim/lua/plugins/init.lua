@@ -152,7 +152,7 @@ local plugins = {
 
   ["goolord/alpha-nvim"] = {
     after = "base46",
-    disable = true,
+    disable = false,
     config = function()
       require "plugins.configs.alpha"
     end,
@@ -203,6 +203,12 @@ local plugins = {
       require("core.utils").load_mappings "whichkey"
     end,
   },
+  -- Grammer check
+  ["rhysd/vim-grammarous"] = {
+    config = function ()
+    end
+  }
+
 }
 
 -- Load all plugins
