@@ -11,6 +11,11 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 local expr = { noremap = true, silent = true, expr = true }
 
+-- I hate escape
+map('i', 'jk', '<ESC>', opts)
+map('i', 'kj', '<ESC>', opts)
+map('i', 'jj', '<ESC>', opts)
+
 -- Don't jump when using *
 map("n", "*", "*<C-o>", opts)
 
@@ -49,6 +54,10 @@ map("x", "K", ":move '<-2<CR>gv-gv", opts)
 map("n", "k", "v:count == 0 ? 'gk' : 'k'", expr)
 map("n", "j", "v:count == 0 ? 'gj' : 'j'", expr)
 
+-- better indenting
+vim.api.nvim_set_keymap('v', '<', '<gv', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('v', '>', '>gv', {noremap = true, silent = true})
+
 local M = {}
 
 M.general = {
@@ -65,10 +74,15 @@ M.general = {
     ["<leader>O"] = { "O<ESC>", "Inserts blank line above" },
     ["<leader>wz"] = { ":set wrap!<CR>", "Toggle wrap" },
     ["<leader>wt"] = { ":set shiftwidth=4<CR>", "Set Tabsize to 4" },
+    ["<C-s>"] = { "<cmd>update<CR>", "Save file" },
+    ["<leader>mp"] = { "<cmd>MarkdownPreview<cr>", "Preview markdown" },
+    ["<leader>ms"] = { "<cmd>MarkdownPreviewStop<cr>", "Stop previewing markdown" },
+    ["<leader>mt"] = { "<cmd>MarkdownPreviewToggle<cr>", "Toggle markdown preview" },
+    ["<leader>bo"] = { "<cmd>BufOnly<cr>", "Close Other buffer"},
   },
 
   i = {
-    ["jk"] = { "<ESC>", "escape vim" },
+      ["<C-s>"] = { "<ESC><cmd>update<CR>i", "Save file" },
   },
   o = {
     ["A"] = { ":<C-U>normal! mzggVG<CR>`z", "dA = Delete all buffer" },

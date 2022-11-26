@@ -7,3 +7,6 @@ end, {})
 create_cmd("EnableShade", function()
   require('packer').loader('shade.nvim')
 end, {})
+
+create_cmd("BufOnly", '%bd|e#',{})
+create_cmd('ReloadConfig', 'source $MYVIMRC', {})

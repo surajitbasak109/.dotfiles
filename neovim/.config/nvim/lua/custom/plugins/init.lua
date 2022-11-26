@@ -30,8 +30,7 @@ return {
 
   ["neovim/nvim-lspconfig"] = {
     config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.plugins.lspconfig"
+      require("plugins.configs.lspconfig")
     end,
   },
 
@@ -140,5 +139,41 @@ return {
         event = 'BufRead',
       },
     },
+  },
+
+  -- Markdown
+  ["iamcco/markdown-preview.nvim"] = {
+    run = "cd app && npm install",
+    setup = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+    config = function ()
+      require('custom.plugins.markdown-preview')
+    end
+  },
+
+  -- Laravel
+  ["jwalton512/vim-blade"] = {
+    config = function ()
+      vim.g.blade_custom_directives = {'datetime', 'javascript'}
+      vim.g.blade_custom_directives_pars = {
+        markdown = 'endmarkdown',
+        cache = 'endcache',
+      }
+    end
+  },
+
+  -- Vue
+  ["posva/vim-vue"] = {},
+
+  -- Emmet
+  ["mattn/emmet-vim"] = {},
+
+  -- Navigation
+  ["nacro90/numb.nvim"] = {
+      config = function ()
+        require'numb'.setup()
+      end
   },
 }

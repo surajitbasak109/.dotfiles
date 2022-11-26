@@ -88,7 +88,6 @@ M.mason = {
     -- "emmet-ls",
     "json-lsp",
     "intelephense",
-    "tailwindcss-language-server",
     "vls",
     "vue-language-server",
 
