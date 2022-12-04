@@ -79,16 +79,18 @@ setopt promptsubst
 # Explanation:
 # - Loading tmux first, to prevent jumps when tmux is loaded after .zshrc
 # - History plugin is loaded early (as it has some defaults) to prevent empty history stack for other plugins
-zinit lucid for \
-    atinit"
-        export ZSH_TMUX_FIXTERM=false
-        export ZSH_TMUX_AUTOSTART=true
-        export ZSH_TMUX_AUTOCONNECT=true
-        export ZSH_TMUX_DEFAULT_SESSION_NAME='</>'
-    " \
-    OMZP::tmux \
-    atinit"HIST_STAMPS=dd.mm.yyyy" \
-    OMZL::history.zsh \
+
+# Do not open tmux by default
+# zinit lucid for \
+#     atinit"
+#         export ZSH_TMUX_FIXTERM=false
+#         export ZSH_TMUX_AUTOSTART=true
+#         export ZSH_TMUX_AUTOCONNECT=true
+#         export ZSH_TMUX_DEFAULT_SESSION_NAME='</>'
+#     " \
+#     OMZP::tmux \
+#     atinit"HIST_STAMPS=dd.mm.yyyy" \
+#     OMZL::history.zsh \
 
 
 zinit wait lucid for \
@@ -188,3 +190,7 @@ zinit wait lucid for \
 zinit wait'0a' lucid is-snippet for \
     $HOME/.dotrc/extra/*.zsh \
     if"[[ -f $HOME/.localrc ]]" $HOME/.localrc
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

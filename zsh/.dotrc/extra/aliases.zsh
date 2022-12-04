@@ -96,3 +96,7 @@ alias tn='tmux new -s $1'
 # pacs() {
 #     sudo pacman -Syy $(pacman -Ssq | fzf -m --preview="pacman -Si {}" --preview-window=:hidden --bind=space:toggle-preview)
 # }
+#
+#
+
+source $HOME/.local/share/zinit/plugins/tj---git-extras/etc/git-extras-completion.zsh

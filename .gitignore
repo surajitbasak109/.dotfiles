@@ -49,3 +49,4 @@ luac.out
 !konsole/.local/share/konsole
 neovim/.config/nvim/lua/plugins/gitsigns.lua
 tmux/.config/plugins
+neovim/.config/nvim.bak
