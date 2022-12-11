@@ -1,6 +1,5 @@
 local M = {}
 
----@param fn fun(buf: buffer, win: window)
 function M.float(fn, opts)
     local buf = vim.api.nvim_create_buf(false, true)
     local vpad = 4

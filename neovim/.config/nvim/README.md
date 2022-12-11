@@ -16,6 +16,8 @@ __Note__: You will notice that when you navigate to a directory and create a fil
 vim.g.netrw_keepdir=0
 ```
 
+Please check [Awesome neovim plugins](https://github.com/rockerBOO/awesome-neovim) for more...
+
 ## Installed Plugins
 
 | Plugin         | Description  | Dependencies |
@@ -50,3 +52,6 @@ vim.g.netrw_keepdir=0
 | []() |  |  |
 | []() |  |  |
 | []() |  |  |
+
+## Useful Articles
+[Writing useful lua functions to my neovim](https://dev.to/voyeg3r/writing-useful-lua-functions-to-my-neovim-14ki)

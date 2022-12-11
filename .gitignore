@@ -50,3 +50,4 @@ luac.out
 neovim/.config/nvim/lua/plugins/gitsigns.lua
 tmux/.config/plugins
 neovim/.config/nvim.bak
+lazygit/.config/lazygit/state.yml
