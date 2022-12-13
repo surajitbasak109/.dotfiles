@@ -11,7 +11,12 @@
 #   qute://help/settings.html
 
 # Key Bindings
-config.bind('<Ctrl-v>', 'spawn mpv {url}')
+# config.bind(';', ':')
+config.bind('Y', 'hint links spawn mpv {hint-url}')
+config.bind('W', 'hint links spawn kitty -e youtube-dl {hint-url}')
+config.bind('xb', 'config-cycle statusbar.show always never')
+config.bind('xt', 'config-cycle tabs.show always never')
+config.bind('xx', 'config-cycle statusbar.show always never;; config-cycle tabs.show always never')
 
 ## Map keys to other keys, so that they are equivalent in all modes. When
 ## the key used as dictionary-key is pressed, the binding for the key
@@ -2078,6 +2083,8 @@ c.url.searchengines = {
     're': 'https://www.reddit.com/r/{}',
     'ub': 'https://www.urbandictionary.com/define.php?term={}',
     'yt': 'https://www.youtube.com/results?search_query={}',
+    'di': 'https://www.dictionary.com/browse/{}',
+    'tr': 'https://translate.google.com/?sl=en&tl=bn&text={}&op=translate',
 }
 
 ## Page(s) to open at the start.
@@ -2556,22 +2563,22 @@ config.set("content.javascript.enabled", True, "chrome://*/*")
 config.set("content.javascript.enabled", True, "qute://*/*")
 
 # Ad Blocking
-c.content.blocking.adblock.lists = [ \
-        "https://easylist.to/easylist/easylist.txt", \
-        "https://easylist.to/easylist/easyprivacy.txt", \
-        "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt", \
-        "https://easylist.to/easylist/fanboy-annoyance.txt", \
-        "https://secure.fanboy.co.nz/fanboy-annoyance.txt", \
-        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/annoyances.txt", \
-        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2020.txt", \
-        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/unbreak.txt", \
-        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt", \
-        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/privacy.txt", \
-        "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt" \
-        ]
+# c.content.blocking.adblock.lists = [ \
+#         "https://easylist.to/easylist/easylist.txt", \
+#         "https://easylist.to/easylist/easyprivacy.txt", \
+#         "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt", \
+#         "https://easylist.to/easylist/fanboy-annoyance.txt", \
+#         "https://secure.fanboy.co.nz/fanboy-annoyance.txt", \
+#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/annoyances.txt", \
+#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2020.txt", \
+#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/unbreak.txt", \
+#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt", \
+#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/privacy.txt", \
+#         "https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt" \
+#         ]
 
 c.content.blocking.enabled = True
-c.content.blocking.hosts.lists = ['https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts']
+# c.content.blocking.hosts.lists = ['https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts']
 
 # import dracula.draw
 

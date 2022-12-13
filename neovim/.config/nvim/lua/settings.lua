@@ -16,7 +16,7 @@ cmd('let &titleold="'..TERMINAL..'"')
 o.titlestring="%<%F%=%l/%L - nvim"
 cmd('set ww+=<,>,[,],h,l') -- move to next line with theses keys
 cmd('syntax on') -- re-enable syntax highlighting
-opt.pumblend = 20 -- adds transparency to the pop menu
+o.pumblend = 20 -- adds transparency to the pop menu
 o.pumheight=10 -- makes p[op]-u[p]-m[enu] smaller
 o.fenc = 'utf-8' -- set file encoding to utf8
 o.ch = 2 -- more space for displaying messages (c[ommand]h[eight])
@@ -24,7 +24,7 @@ cmd('set cc=99999') -- fix indentation for now (c[olor]c[olumn])
 o.sb = true -- Horizontal splits will automatically be below
 o.tgc = true -- set term gui color (24-bit RGB color) that most terminals supports this
 o.spr = true -- Vertical splits will automatically be to the right
-o.cole = true -- conceallevel, so that I can see `` in md files
+opt.cole = 2 -- conceallevel, so that I can see `` in md files
 
 -- Cursor
 opt.cursorline = true
@@ -39,14 +39,14 @@ opt.guicursor = {
     'sm:block-blinkwait175-blinkoff150-blinkon175',
 }
 --]]
-opt.virtualedit = 'block'
+o.virtualedit = 'block'
 
 -- Indent settings
-opt.expandtab = true -- expandtab, Converts tabs to spaces
-opt.shiftwidth = 4 -- Change the number of space characters inserted for indentation
+o.expandtab = true -- expandtab, Converts tabs to spaces
+o.shiftwidth = 4 -- Change the number of space characters inserted for indentation
 opt.ts = 4 -- insert 2 spaces for a tab
 opt.sts = 4 -- softtabstop
-opt.wrap = false -- Display long lines as just one line
+o.wrap = false -- Display long lines as just one line
 -- [comment below if you want to use smart indent]
 opt.ai = true -- set auto indent
 opt.ci = true -- set copy indent
@@ -71,7 +71,7 @@ opt.clipboard = "unnamedplus"
 o.gfn = "'JetBrainsMono Nerd Font Mono', Victor Mono Medium, Operator Mono Lig, Operator Mono Book, Fira Code Retina, Consolas, 'Courier New', monospace" 
 
 -- Default shell is zsh
-opt.shell = "/bin/zsh"
+o.shell = "/bin/zsh"
 
 -- Completion (completeopt)
 opt.cot = "menu,menuone,noselect"
@@ -88,8 +88,8 @@ vim.opt.fillchars = {
   foldclose = "▸",
 }
 
-opt.grepprg = 'rg --vimgrep --no-heading --smart-case'
-opt.formatprg = 'prettier --stdin-filepath=%'
+o.grepprg = 'rg --vimgrep --no-heading --smart-case'
+o.formatprg = 'prettier --stdin-filepath=%'
 
 g.netrw_keepdir=0
 -- If already installed nvim-tree then disable the netrw file explorer

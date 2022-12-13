@@ -42,20 +42,25 @@ M.leader = {
         },
     },
     ['b'] = {
-        name = '+buffer',
-        ['b'] = { '<cmd>:e #<cr>', 'Switch to Other Buffer' },
-        ['p'] = { '<cmd>:BufferLineCyclePrev<CR>', 'Previous Buffer' },
-        ['['] = { '<cmd>:BufferLineCyclePrev<CR>', 'Previous Buffer' },
-        ['n'] = { '<cmd>:BufferLineCycleNext<CR>', 'Next Buffer' },
-        [']'] = { '<cmd>:BufferLineCycleNext<CR>', 'Next Buffer' },
-        ['D'] = { '<cmd>bd%<CR>', 'Delete Buffer' },
-        ['f'] = {
-            function()
-                vim.lsp.buf.format()
-            end,
-            'Format file',
+        name = '+Browse',
+        ['b'] = {
+            name = "+buffer",
+            ['b'] = { '<cmd>e #<cr>', 'Switch to Other Buffer' },
+            ['p'] = { '<cmd>BufferLineCyclePrev<CR>', 'Previous Buffer' },
+            ['['] = { '<cmd>BufferLineCyclePrev<CR>', 'Previous Buffer' },
+            ['n'] = { '<cmd>BufferLineCycleNext<CR>', 'Next Buffer' },
+            [']'] = { '<cmd>BufferLineCycleNext<CR>', 'Next Buffer' },
+            ['D'] = { '<cmd>bd%<CR>', 'Delete Buffer' },
+            ['w'] = { "<cmd>wall<cr>", 'Save all' },
         },
-        ['w'] = { "<cmd>wall<cr>", 'Save all' },
+        ['r'] = {
+            name = "+Browser",
+            ['i'] = { '<cmd>BrowseInputSearch<cr>', 'Browse input search'},
+            ['b'] = { '<cmd>Browse<cr>', 'Browse'},
+            ['bb'] = { '<cmd>BrowseBookmarks<cr>', 'Browse from bookmark'},
+            ['d'] = { '<cmd>BrowseDevdocsSearch<cr>', 'Browse Dev Doc'},
+            ['m'] = { '<cmd>BrowseMdnSearch<cr>', 'Browse MDN'},
+        }
     },
     ['g'] = {
         name = '+git',
@@ -186,6 +191,15 @@ M.leader = {
             },
         },
     },
+    ["u"] = {
+        name = "+Utilities",
+        ['f'] = {
+            function()
+                vim.lsp.buf.format()
+            end,
+            'Format file',
+        },
+    },
     ['<tab>'] = {
         name = 'tabs',
         ['<tab>'] = { '<cmd>tabnew<CR>', 'New Tab' },
@@ -237,6 +251,11 @@ map('n', '<c-j>', '<cmd>winc j<cr>', opts)
 map('n', '<c-k>', '<cmd>winc k<cr>', opts)
 map('n', '<c-h>', '<cmd>winc h<cr>', opts)
 map('n', '<c-l>', '<cmd>winc l<cr>', opts)
+
+map('t', '<c-j>', [[<C-\><C-n><cmd>winc j<cr>]], opts)
+map('t', '<c-k>', [[<C-\><C-n><cmd>winc k<cr>]], opts)
+map('t', '<c-h>', [[<C-\><C-n><cmd>winc h<cr>]], opts)
+map('t', '<c-l>', [[<C-\><C-n><cmd>winc l<cr>]], opts)
 
 -- Window resizing
 map('n', '<s-Down>', '<cmd>res +2<cr>', opts)

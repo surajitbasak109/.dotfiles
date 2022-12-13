@@ -8,23 +8,13 @@ config_version: 2
 settings:
   content.autoplay:
     global: false
-  content.blocking.adblock.lists:
-    global:
-    - https://easylist.to/easylist/easylist.txt
-    - https://easylist.to/easylist/easyprivacy.txt
-    - https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
-    - https://easylist.to/easylist/fanboy-annoyance.txt
-    - https://secure.fanboy.co.nz/fanboy-annoyance.txt
-    - https://github.com/uBlockOrigin/uAssets/raw/master/filters/annoyances.txt
-    - https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters-2020.txt
-    - https://github.com/uBlockOrigin/uAssets/raw/master/filters/unbreak.txt
-    - https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt
-    - https://github.com/uBlockOrigin/uAssets/raw/master/filters/privacy.txt
-    - https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt
-  content.blocking.hosts.lists:
-    global:
-    - https://raw.githubusercontent.com/gOGo/master/hosts
   content.blocking.method:
     global: auto
   content.blocking.whitelist:
     global: null
+  content.notifications.enabled:
+    https://app.slack.com: true
+  statusbar.show:
+    global: always
+  tabs.show:
+    global: always

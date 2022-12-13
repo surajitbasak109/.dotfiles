@@ -82,6 +82,14 @@ packer.startup({
         -- RishabhRD/nvim-lsputils
         -- glepnir/lspsaga.nvim           2.2K Star
 
+        use({
+            "glepnir/lspsaga.nvim",
+            branch = "main",
+            config = function()
+                require('plugins.config.lspsaga')
+            end,
+        })
+
         -- Editing
         use({
             'nacro90/numb.nvim',
@@ -505,17 +513,28 @@ packer.startup({
         })
 
         -- Session
-        use({
-            'rmagatti/auto-session',
-            requires = { 'rmagatti/session-lens' },
-            config = function()
-                require('plugins.config.auto-session')
-            end,
-        })
+        -- use({
+        --     'rmagatti/auto-session',
+        --     requires = { 'rmagatti/session-lens' },
+        --     config = function()
+        --         require('plugins.config.auto-session')
+        --     end,
+        -- })
 
         -- Quickfix
         use({
             'kevinhwang91/nvim-bqf',
+        })
+
+        -- Search and Replace
+        use({
+            's1n7ax/nvim-search-and-replace',
+            config = function()
+                local present, search_and_replace = pcall(require, "nvim-search-and-replace")
+                if present then
+                    search_and_replace.setup()
+                end
+            end,
         })
 
         ----------------------------------------------
@@ -609,7 +628,7 @@ packer.startup({
         -- Fuzzy file finder
         use({
             'junegunn/fzf.vim',
-            requires = { 'junegunn/fzf', run = 'fzf#install()'},
+            requires = { 'junegunn/fzf', run = 'fzf#install()' },
             config = function()
                 vim.g.fzf_buffers_jump = 1
 
