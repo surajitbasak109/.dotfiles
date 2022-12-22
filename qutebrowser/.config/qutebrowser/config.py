@@ -13,7 +13,7 @@
 # Key Bindings
 # config.bind(';', ':')
 config.bind('Y', 'hint links spawn mpv {hint-url}')
-config.bind('W', 'hint links spawn kitty -e youtube-dl {hint-url}')
+config.bind('W', 'hint links spawn kitty -e youtube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --add-metadata {hint-url}')
 config.bind('xb', 'config-cycle statusbar.show always never')
 config.bind('xt', 'config-cycle tabs.show always never')
 config.bind('xx', 'config-cycle statusbar.show always never;; config-cycle tabs.show always never')

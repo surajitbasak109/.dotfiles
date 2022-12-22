@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 alias v=nvim
-alias vim=nvim
+#alias vim=nvim
 alias sysinfo="inxi -Fxxxz"
 # alias cat=bat
 alias open=xdg-open

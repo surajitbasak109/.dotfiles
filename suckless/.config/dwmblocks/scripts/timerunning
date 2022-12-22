@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# uptime -p | awk '{print $2" "$3}'
+# uptime -p | sed 's/up //' 
+uptime -p | sed 's/up //' | awk '{print $1"H:"$3"M"}'
