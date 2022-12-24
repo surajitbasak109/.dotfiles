@@ -66,8 +66,8 @@ greset() { git status -s |  fzf -m | awk '{print $2}' |xargs git reset && git st
 
 
 alias myip=ip-internal
-alias yt='youtube-dl --extract-audio --add-metadata --xattrs --embed-thumbnail --audio-quality 0 --audio-format mp3'
-alias ytv='youtube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --add-metadata'
+alias yt='yt-dlp --extract-audio --add-metadata --xattrs --embed-thumbnail --audio-quality 0 --audio-format mp3'
+alias ytv='yt-dlp --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --add-metadata'
 alias upgrade='sudo apt update && sudo apt upgrade'
 
 alias q=exit
