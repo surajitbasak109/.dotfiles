@@ -1,79 +1,80 @@
 # Javascript Interview Questions
 
-1. **[What is the difference between null and undefined?](#what-is-the-difference-between-null-and-undefined%3F)**
-1. **[What is a closure and how/why would we use one?](#what-is-a-closure-and-how%2Fwhy-would-we-use-one%3F)**
-1. **[What is the difference between == and ===?](#what-is-the-difference-between-%3D%3D-and-%3D%3D%3D%3F)**
-1. **[What is the difference between a forEach loop and a for loop?](#what-is-the-difference-between-a-foreach-loop-and-a-for-loop%3F)**
-1. **[What is a promise and how do we use it?](#what-is-a-promise-and-how-do-we-use-it%3F)**
-1. **[What is the difference between synchronous and asynchronous code?](#what-is-the-difference-between-synchronous-and-asynchronous-code%3F)**
-1. **[What is a pure function?](#what-is-a-pure-function%3F)**
-1. **[What is "this" in JavaScript and how does it work?](#what-is-%E2%80%9Cthis%E2%80%9D-in-javascript-and-how-does-it-work%3F)**
-1. **[What is the difference between let and var?](#what-is-the-difference-between-let-and-var%3F)**
-1. **[How do we handle errors in JavaScript?](#how-do-we-handle-errors-in-javascript%3F)**
-1. **[What is a JavaScript module and how do we use it?](#what-is-a-javascript-module-and-how-do-we-use-it%3F)**
-1. **[What is the difference between a JavaScript library and a framework?](#what-is-the-difference-between-a-javascript-library-and-a-framework%3F)**
-1. **[What is a JavaScript callback function and how do we use it?](#what-is-a-javascript-callback-function%2C-and-how-do-you-use-it%3F)**
-1. **[What is event bubbling in JavaScript and how does it work?](#what-is-event-bubbling-in-javascript%2C-and-how-does-it-work%3F)**
-1. **[How do we implement type checking in JavaScript?](#how-do-you-implement-type-checking-in-javascript%3F)**
-1. **[How do we optimize the performance of a JavaScript application?](#how-do-you-optimize-the-performance-of-a-javascript-application%3F)**
-1. **[What is the purpose of the "default" keyword in a JavaScript switch statement?](#what-is-the-purpose-of-the-%E2%80%9Cdefault%E2%80%9D-keyword-in-a-javascript-switch-statement%3F)**
-1. **[What is a JavaScript proxy and how do we use it?](#what-is-a-javascript-proxy-and-how-do-we-use-it%3F)**
-1. **[What is a JavaScript symbol and how do we use it?](#what-is-a-javascript-symbol-and-how-do-we-use-it%3F)**
-1. **[What is the difference between a JavaScript class and an interface?](#what-is-the-difference-between-a-javascript-class-and-an-interface%3F)**
-1. **[Why do we call JavaScript as dynamic language?](#why-do-we-call-javascript-as-dynamic-language%3F)**
-1. **[how does JavaScript determine data types?](#how-does-javascript-determine-data-types%3F)**
-1. **[What is typeof functions?](#what-is-typeof-functions%3F)**
-1. **[How to check data type in JavaScript?](#how-to-check-data-type-in-javascript%3F)**
-1. **[What are different datatypes in JavaScript?](#what-are-different-datatypes-in-javascript%3F)**
-1. **[Explain Undefined Data types?](#explain-undefined-data-types%3F)**
-1. **[What is Null?](#what-is-null%3F)**
-1. **[Differentiate between Null and Undefined?](#differentiate-between-null-and-undefined%3F)**
-1. **[Explain Hoisting?](#explain-hoisting%3F)**
-1. **[Are JavaScript initialization hoisted?](#are-javascript-initialization-hoisted%3F)**
-1. **[What are global variables?](#what-are-global-variables%3F)**
-1. **[What are the issues with Global variables?](#what-are-the-issues-with-global-variables%3F)**
-1. **[What happens when you declare variable with out VAR?](#what-happens-when-you-declare-variable-with-out-var%3F)**
-1. **[What is Use Strict?](#what-is-use-strict%3F)**
-1. **[How to force developers to use Var keyword?](#how-to-force-developers-to-use-var-keyword%3F)**
-1. **[How can we handle Global Variables?](#how-can-we-handle-global-variables%3F)**
-1. **[What are Closures?](#what-are-closures%3F)**
-1. **[Why do we need Closures?](#why-do-we-need-closures%3F)**
-1. **[Explain IIFE?](#explain-iife%3F)**
-1. **[What is the use of IIFE?](#what-is-the-use-of-iife%3F)**
-1. **[What is name collision in global scope?](#what-is-name-collision-in-global-scope%3F)**
+1. **[What is the difference between null and undefined?](#what-is-the-difference-between-null-and-undefined)**
+1. **[What is a closure and how/why would we use one?](#what-is-a-closure-and-how%2Fwhy-would-we-use-one)**
+1. **[What is the difference between == and ===?](#what-is-the-difference-between-%3D%3D-and-%3D%3D%3D)**
+1. **[What is the difference between a forEach loop and a for loop?](#what-is-the-difference-between-a-foreach-loop-and-a-for-loop)**
+1. **[What is a promise and how do we use it?](#what-is-a-promise-and-how-do-we-use-it)**
+1. **[What is the difference between synchronous and asynchronous code?](#what-is-the-difference-between-synchronous-and-asynchronous-code)**
+1. **[What is a pure function?](#what-is-a-pure-function)**
+1. **[What is "this" in JavaScript and how does it work?](#what-is-%E2%80%9Cthis%E2%80%9D-in-javascript-and-how-does-it-work)**
+1. **[What is the difference between let and var?](#what-is-the-difference-between-let-and-var)**
+1. **[How do we handle errors in JavaScript?](#how-do-we-handle-errors-in-javascript)**
+1. **[What is a JavaScript module and how do we use it?](#what-is-a-javascript-module-and-how-do-we-use-it)**
+1. **[What is the difference between a JavaScript library and a framework?](#what-is-the-difference-between-a-javascript-library-and-a-framework)**
+1. **[What is a JavaScript callback function and how do we use it?](#what-is-a-javascript-callback-function%2C-and-how-do-you-use-it)**
+1. **[What is event bubbling in JavaScript and how does it work?](#what-is-event-bubbling-in-javascript%2C-and-how-does-it-work)**
+1. **[How do we implement type checking in JavaScript?](#how-do-you-implement-type-checking-in-javascript)**
+1. **[How do we optimize the performance of a JavaScript application?](#how-do-you-optimize-the-performance-of-a-javascript-application)**
+1. **[What is the purpose of the "default" keyword in a JavaScript switch statement?](#what-is-the-purpose-of-the-%E2%80%9Cdefault%E2%80%9D-keyword-in-a-javascript-switch-statement)**
+1. **[What is a JavaScript proxy and how do we use it?](#what-is-a-javascript-proxy-and-how-do-we-use-it)**
+1. **[What is a JavaScript symbol and how do we use it?](#what-is-a-javascript-symbol-and-how-do-we-use-it)**
+1. **[What is the difference between a JavaScript class and an interface?](#what-is-the-difference-between-a-javascript-class-and-an-interface)**
+1. **[Why do we call JavaScript as dynamic language?](#why-do-we-call-javascript-as-dynamic-language)**
+1. **[how does JavaScript determine data types?](#how-does-javascript-determine-data-types)**
+1. **[What is typeof functions?](#what-is-typeof-functions)**
+1. **[How to check data type in JavaScript?](#how-to-check-data-type-in-javascript)**
+1. **[What are different datatypes in JavaScript?](#what-are-different-datatypes-in-javascript)**
+1. **[Explain Undefined Data types?](#explain-undefined-data-types)**
+1. **[What is Null?](#what-is-null)**
+1. **[Differentiate between Null and Undefined?](#differentiate-between-null-and-undefined)**
+1. **[Explain Hoisting?](#explain-hoisting)**
+1. **[Are JavaScript initialization hoisted?](#are-javascript-initialization-hoisted)**
+1. **[What are global variables?](#what-are-global-variables)**
+1. **[What are the issues with Global variables?](#what-are-the-issues-with-global-variables)**
+1. **[What happens when you declare variable with out VAR?](#what-happens-when-you-declare-variable-with-out-var)**
+1. **[What is Use Strict?](#what-is-use-strict)**
+1. **[How to force developers to use Var keyword?](#how-to-force-developers-to-use-var-keyword)**
+1. **[How can we handle Global Variables?](#how-can-we-handle-global-variables)**
+1. **[What are Closures?](#what-are-closures)**
+1. **[Why do we need Closures?](#why-do-we-need-closures)**
+1. **[Explain IIFE?](#explain-iife)**
+1. **[What is the use of IIFE?](#what-is-the-use-of-iife)**
+1. **[What is name collision in global scope?](#what-is-name-collision-in-global-scope)**
 1. **[IIFE vs Normal Function?]()**
-1. **[What are design patterns?](#iife-vs-normal-function%3F)**
-1. **[Which is the most used design pattern?](#which-is-the-most-used-design-pattern%3F)**
-1. **[What is module Pattern and revealing module pattern?](#what-is-module-pattern-and-revealing-module-pattern%3F)**
-1. **[What are the various ways to create JavaScript objects?](#what-are-the-various-ways-to-create-javascript-objects%3F)**
-1. **[How can we do inheritance in JavaScript?](#how-can-we-do-inheritance-in-javascript%3F)**
-1. **[What is prototype in JavaScript?](#what-is-prototype-in-javascript%3F)**
-1. **[Explain Prototype chaining?](#explain-prototype-chaining%3F)**
-1. **[What is Let Keyword?](#what-is-let-keyword%3F)**
-1. **[Are Let variables hoisted?](#are-let-variables-hoisted%3F)**
-1. **[Explain Temporal Dead Zone?](#explain-temporal-dead-zone%3F)**
-1. **[What is class in ES6?](#what-is-class-in-es6%3F)**
-1. **[So with class Keyword does it imply JavaScript is a OOP language?](#so-with-class-keyword-does-it-imply-javascript-is-a-oop-language%3F)**
-1. **[Differentiate between class and normal function?](#differentiate-between-class-and-normal-function%3F)**
-1. **[What is a Arrow function?](#what-is-a-arrow-function%3F)**
-1. **[Why do we use Arrow function?](#why-do-we-use-arrow-function%3F)**
-1. **[Does Arrow function create its own this?](#does-arrow-function-create-its-own-this%3F)**
-1. **[Explain Synchronous execution?](#explain-synchronous-execution%3F)**
-1. **[What is a call Stack?](#what-is-a-call-stack%3F)**
-1. **[What is a blocking call?](#what-is-a-blocking-call%3F)**
-1. **[How to avoid blocking calls?](#how-to-avoid-blocking-calls%3F)**
-1. **[Explain Asynchronous execution?](#explain-asynchronous-execution%3F)**
-1. **[Synch vs Asynch?](#synch-vs-asynch%3F)**
-1. **[How can we do Asynch calls?](#how-can-we-do-asynch-calls%3F)**
-1. **[What is a thread?](#what-is-a-thread%3F)**
-1. **[Explain Multi-threading?](#explain-multi-threading%3F)**
-1. **[Is JavaScript Multi-threaded?](#is-javascript-multi-threaded%3F)**
-1. **[Then how does Settimeout run?](#then-how-does-settimeout-run%3F)**
-1. **[What is a WebAPI/Browser API?](#what-is-a-webapi%2Fbrowser-api%3F)**
-1. **[What is a Event loop and callback queue?](#what-is-a-event-loop-and-callback-queue%3F)**
+1. **[What are design patterns?](#iife-vs-normal-function)**
+1. **[Which is the most used design pattern?](#which-is-the-most-used-design-pattern)**
+1. **[What is module Pattern and revealing module pattern?](#what-is-module-pattern-and-revealing-module-pattern)**
+1. **[What are the various ways to create JavaScript objects?](#what-are-the-various-ways-to-create-javascript-objects)**
+1. **[How can we do inheritance in JavaScript?](#how-can-we-do-inheritance-in-javascript)**
+1. **[What is prototype in JavaScript?](#what-is-prototype-in-javascript)**
+1. **[Explain Prototype chaining?](#explain-prototype-chaining)**
+1. **[What is Let Keyword?](#what-is-let-keyword)**
+1. **[Are Let variables hoisted?](#are-let-variables-hoisted)**
+1. **[Explain Temporal Dead Zone?](#explain-temporal-dead-zone)**
+1. **[What is class in ES6?](#what-is-class-in-es6)**
+1. **[So with class Keyword does it imply JavaScript is a OOP language?](#so-with-class-keyword-does-it-imply-javascript-is-a-oop-language)**
+1. **[Differentiate between class and normal function?](#differentiate-between-class-and-normal-function)**
+1. **[What is a Arrow function?](#what-is-a-arrow-function)**
+1. **[Why do we use Arrow function?](#why-do-we-use-arrow-function)**
+1. **[Does Arrow function create its own this?](#does-arrow-function-create-its-own-this)**
+1. **[Explain Synchronous execution?](#explain-synchronous-execution)**
+1. **[What is a call Stack?](#what-is-a-call-stack)**
+1. **[What is a blocking call?](#what-is-a-blocking-call)**
+1. **[How to avoid blocking calls?](#how-to-avoid-blocking-calls)**
+1. **[Explain Asynchronous execution?](#explain-asynchronous-execution)**
+1. **[Synch vs Asynch?](#synch-vs-asynch)**
+1. **[How can we do Asynch calls?](#how-can-we-do-asynch-calls)**
+1. **[What is a thread?](#what-is-a-thread)**
+1. **[Explain Multi-threading?](#explain-multi-threading)**
+1. **[Is JavaScript Multi-threaded?](#is-javascript-multi-threaded)**
+1. **[Then how does Settimeout run?](#then-how-does-settimeout-run)**
+1. **[What is a WebAPI/Browser API?](#what-is-a-webapi%2Fbrowser-api)**
+1. **[What is a Event loop and callback queue?](#what-is-a-event-loop-and-callback-queue)**
 1. **[What is a promise?]()**
 
-#### What is the difference between null and undefined?
+### What is the difference between null and undefined?
+[:top: Go to Top](#javascript-interview-questions)
 
 In JavaScript, null and undefined are both primitive values that represent the absence of a value or object. However, they are two distinct types of values with different meanings.
 
@@ -121,7 +122,8 @@ if (undefined) {
 
 **Summary**: Null is a value that represents the absence of a value or a null reference. It is an assignment value that means no value or object is assigned to a variable. On the other hand, undefined is a value that is automatically assigned to a variable that has not been assigned a value.
 
-#### What is a closure and how/why would we use one?
+### What is a closure and how/why would we use one?
+[:top: Go to Top](#javascript-interview-questions)
 
 A closure is a function that retains access to the variables of its enclosing scope even after the function has exited the scope. This means that we can use a closure to access and manipulate the variables from a parent function even after the parent function has returned.
 
@@ -161,13 +163,15 @@ In the example above, the `greet` function returns a closure that remembers the 
 
 **Summary**: A closure is a function that remembers the variables from its enclosing lexical scope, even when the function is executed outside of that scope. we would use a closure to create private variables or to create functions that have access to an outer function's variables.
 
-#### What is the difference between == and ===?
+### What is the difference between == and ===?
+[:top: Go to Top](#javascript-interview-questions)
 
 The double assignment operattor only checks for value. It does not check for its type. For example "9" == 9 will return true. But triple assignment operator used for strict checking. It checks the value as well the type.
 
 **Summary**: The == operator checks if the values of two operands are equal, while the === operator checks if the values and data types of the operands are equal. For example, 1 == '1' would evaluate to true, but 1 === '1' would evaluate to false because the operands are of different data types.
 
-#### What is the difference between a forEach loop and a for loop?
+### What is the difference between a forEach loop and a for loop?
+[:top: Go to Top](#javascript-interview-questions)
 
 A forEach loop is an array method that allows we to iterate over an array and execute a callback function for each element in the array. It is designed to be used on arrays and is not a general-purpose looping construct.
 
@@ -211,7 +215,8 @@ One advantage of using a forEach loop is that it is easier to read and write, es
 
 **Summary**: A forEach loop is used to iterate over an array, and it calls a provided function for each element in the array. A for loop is a more general looping construct that can be used to iterate over elements in an array or other iterable objects, as well as perform a set of statements a certain number of times.
 
-#### What is a promise and how do we use it?
+### What is a promise and how do we use it?
+[:top: Go to Top](#javascript-interview-questions)
 
 A promise is an object that represents the result of an asynchronous operation. It allows we to write asynchronous code in a way that is easier to read and reason about, by chaining async operations together using a simple, synchronous-looking syntax.
 
@@ -272,7 +277,8 @@ loadJSON("data.json")
 
 **Summary**: A promise is an object that represents the result of an asynchronous operation. It has three states: pending, fulfilled, and rejected. we can use a promise to handle asynchronous results by chaining callback functions to the promise's then method, and handling any errors with the catch method.
 
-#### What is the difference between synchronous and asynchronous code?
+### What is the difference between synchronous and asynchronous code?
+[:top: Go to Top](#javascript-interview-questions)
 
 Synchronous code is code that is executed in a blocking manner, meaning that the interpreter will execute each line of code in order, and pause at each line until the code has completed execution. This means that the interpreter will wait for blocking operations such as reading a file from disk or waiting for a network request to complete before moving on to the next line of code.
 
@@ -315,7 +321,8 @@ Asynchronous code can be more efficient because it allows the interpreter to per
 
 **Summary**: Synchronous code is code that is executed in a blocking manner, meaning that the program will wait for the synchronous code to complete before moving on to the next line of code. Asynchronous code, on the other hand, is code that is executed in a non-blocking manner, allowing the program to continue running while the asynchronous code is being executed.
 
-#### What is a pure function?
+### What is a pure function?
+[:top: Go to Top](#javascript-interview-questions)
 
 A pure function is a function that has the following properties:
 
@@ -336,7 +343,8 @@ Pure functions have several benefits. They are easier to reason about because th
 
 __Summary__: A pure function is a function that returns the same output given the same input, and has no side effects. This means that a pure function does not modify any external state, and does not depend on any external state.
 
-#### What is "this" in JavaScript and how does it work?
+### What is "this" in JavaScript and how does it work?
+[:top: Go to Top](#javascript-interview-questions)
 
 In JavaScript, this is a keyword that refers to the current context of a function. The value of this depends on how the function is called, and it can be used to access and manipulate the context in which the function is executed.
 
@@ -394,7 +402,8 @@ It is worth noting that in arrow functions, the value of this is lexically scope
 
 __Summary__: "This" in JavaScript refers to the object that is executing the current function. The value of "this" can change depending on how the function is called. In general, "this" refers to the object that the function is a method of, but it can also be bound to a different object using the bind, call, or apply methods.
 
-#### What is the difference between let and var?
+### What is the difference between let and var?
+[:top: Go to Top](#javascript-interview-questions)
 
 In JavaScript, let and var are both keywords that are used to declare variables. However, they have some key differences in their behavior:
 
@@ -423,7 +432,8 @@ It is worth noting that `let` and `const` (which declares a constant variable) o
 
 __Summary__: Both `let` and `var` are used to declare variables in JavaScript, but there are some key differences between the two. Var is function-scoped, meaning that the variable is only accessible within the function in which it is declared. Let is block-scoped, meaning that the variable is only accessible within the block in which it is declared. Additionally, variables declared with let are not accessible before they are declared, unlike variables declared with var.
 
-#### How do we handle errors in JavaScript?
+### How do we handle errors in JavaScript?
+[:top: Go to Top](#javascript-interview-questions)
 
 In JavaScript, we can use the try and catch statements to handle errors that might occur in our code. The try statement allows we to specify a block of code that might throw an error, and the catch statement allows we to handle the error if it occurs.
 
@@ -477,29 +487,39 @@ function readFile(filename) {
 }
 ```
 
-#### What is a JavaScript module and how do we use it?
+### What is a JavaScript module and how do we use it?
+[:top: Go to Top](#javascript-interview-questions)
+
 A JavaScript module is a piece of code that is executed once it is loaded.
 Modules are used to organize code, create reusable components, and manage dependencies.
 In JavaScript, we can use modules with a module bundler like Webpack or Rollup, or with the native JavaScript module system (ES6 modules).
 To use a module, we can import it using the "import" keyword, and then use the functions or variables that the module exports.
 
-#### What is the difference between a JavaScript library and a framework?
+### What is the difference between a JavaScript library and a framework?
+[:top: Go to Top](#javascript-interview-questions)
+
 A JavaScript library is a collection of functions that we can call from our own code to perform a specific task.
 A library is generally used to solve a specific problem or set of problems, and it is up to the developer to use the library in the right way to solve their problem.
 A JavaScript framework, on the other hand, is a pre-written set of code that provides a structure for building web applications.
 A framework provides a set of conventions for organizing our code and a set of tools for common tasks, and the developer is expected to follow the conventions and use the tools provided by the framework.
 
-#### What is a JavaScript callback function, and how do you use it?
+### What is a JavaScript callback function, and how do you use it?
+[:top: Go to Top](#javascript-interview-questions)
+
 A callback function is a function that is passed as an argument to another function and is executed after the outer function has completed.
 Callback functions are commonly used in JavaScript to perform tasks asynchronously, such as making an HTTP request or handling a user event.
 To use a callback function, you pass it as an argument to the function that will execute it, and then define the function code in the callback.
 
-#### What is event bubbling in JavaScript, and how does it work?
+### What is event bubbling in JavaScript, and how does it work?
+[:top: Go to Top](#javascript-interview-questions)
+
 Event bubbling is a process in JavaScript where an event that is triggered on a child element will also trigger on its parent element, and then on its parent's parent, and so on up the DOM tree.
 This happens because the event is "bubbled" up the DOM tree from the element on which it was triggered.
 You can use event bubbling to handle events on multiple elements at once, or to handle events that are dynamically added to the DOM.
 
-#### How do you implement type checking in JavaScript?
+### How do you implement type checking in JavaScript?
+[:top: Go to Top](#javascript-interview-questions)
+
 There are several ways to implement type checking in JavaScript. You can use the typeof operator to check the type of a value, like this:
 ```js
 typeof myValue === 'string'
@@ -513,16 +533,22 @@ Or you can use the Object.prototype.toString method to check the type of an obje
 Object.prototype.toString.call(myValue) === '[object String]'
 ```
 
-#### How do you optimize the performance of a JavaScript application?
+### How do you optimize the performance of a JavaScript application?
+[:top: Go to Top](#javascript-interview-questions)
+
 There are several ways to optimize the performance of a JavaScript application.
 Some strategies include minimizing the number of function calls, minimizing the amount of DOM manipulation, and minimizing the use of complex data structures.
 You can also use techniques like lazy loading, code splitting, and server-side rendering to improve the performance of your application.
 
-#### What is the purpose of the "default" keyword in a JavaScript switch statement?
+### What is the purpose of the "default" keyword in a JavaScript switch statement?
+[:top: Go to Top](#javascript-interview-questions)
+
 The "default" keyword in a JavaScript switch statement is used to specify a block of code that should be executed if none of the case clauses match the provided value.
 The "default" keyword can be used to provide a fallback option
 
-#### What is a JavaScript proxy and how do we use it?
+### What is a JavaScript proxy and how do we use it?
+[:top: Go to Top](#javascript-interview-questions)
+
 A JavaScript proxy is an object that acts as an intermediary between a target object and the code that accesses it.
 You can use a proxy to intercept and modify operations on the target object, such as getting or setting a property, calling a function, or constructing an object.
 
@@ -547,7 +573,9 @@ console.log(proxy.a); // logs "Getting property a"
 
 In this example, the proxy intercepts any attempts to get or set properties on the target object and logs a message to the console. The proxy then forwards the operation to the target object, allowing the operation to be completed as normal.
 
-#### What is a JavaScript symbol and how do we use it?
+### What is a JavaScript symbol and how do we use it?
+[:top: Go to Top](#javascript-interview-questions)
+
 A JavaScript symbol is a primitive data type that represents a unique, non-string identifier.
 Symbols are used to create unique keys for object properties, and are particularly useful for avoiding name conflicts when creating multiple properties with the same name.
 
@@ -594,7 +622,9 @@ const instance = new MyClass();
 console.log(instance[_privateProperty]); // logs "my private value"
 ```
 
-#### What is the difference between a JavaScript class and an interface?
+### What is the difference between a JavaScript class and an interface?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, a class is a syntax for creating objects and defining their properties and methods. A class is a blueprint for creating objects, and an object created from a class is called an instance of that class. Classes are a way to define the structure and behavior of objects in a more declarative way, using syntax that is similar to object-oriented languages like Java or C#.
 
 An interface, on the other hand, is a way to define a set of related methods that a class or object must implement. In JavaScript, interfaces are not a built-in language feature, but they can be implemented using various techniques, such as object contracts or mixins. Interfaces are used to define a common set of methods that must be implemented by any object that implements the interface, and to ensure that objects have a certain set of capabilities.
@@ -623,7 +653,8 @@ In JavaScript, a class is a blueprint for creating objects that defines the stru
 An interface, on the other hand, is a way to define a set of related methods that a class or object must implement in order to have certain capabilities.
 Interfaces are not a built-in language feature in JavaScript, but they can be implemented using various techniques such as object contracts or mixins.
 
-#### Why do we call JavaScript as dynamic language?
+### Why do we call JavaScript as dynamic language?
+[:top: Go to Top](#javascript-interview-questions)
 JavaScript is often referred to as a dynamic language because it can execute actions and modify the behavior of a program at runtime.
 This is in contrast to static languages, which typically have to be fully compiled before they can be executed.
 
@@ -659,7 +690,9 @@ __Summary__: JavaScript is referred to as a dynamic language because it can exec
 This is in contrast to static languages, which must be fully compiled before they can be executed.
 JavaScript's dynamic nature allows for flexibility in the behavior of a program, but can also make it more difficult to reason about the behavior of a program in larger code bases.
 
-#### How does JavaScript determine data types?
+### How does JavaScript determine data types?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, data types are determined automatically based on the value assigned to a variable.
 JavaScript is a loosely typed or weakly typed language, which means that you do not have to explicitly specify the data type of a variable when you declare it.
 Instead, the data type of the variable is determined by the value that is assigned to it.
@@ -694,7 +727,9 @@ JavaScript is a loosely typed or weakly typed language, meaning that the data ty
 JavaScript has several data types, including string, number, boolean, null, undefined, and object.
 It is possible to change the data type of a variable in JavaScript by reassigning a value of a different data type to it.
 
-#### What is typeof functions?
+### What is typeof functions?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, the "typeof" operator is used to determine the data type of a value. The "typeof" operator returns a string that represents the data type of the value.
 
 Here is an example of how you can use the "typeof" operator:
@@ -727,7 +762,9 @@ console.log(typeof myValue); // logs 'function'
 
 As you can see, the "typeof" operator returns a string representation of the data type of the value. However, there are a few nuances to be aware of when using the "typeof" operator. For example, "typeof null"
 
-#### How to check data type in JavaScript?
+### How to check data type in JavaScript?
+[:top: Go to Top](#javascript-interview-questions)
+
 There are several ways to check the data type of a value in JavaScript:
 
 1. Using the "typeof" operator: The "typeof" operator is a unary operator that returns a string representation of the data type of a value.
@@ -782,7 +819,8 @@ __Summary__: There are several ways to check the data type of a value in JavaScr
 The "typeof" operator is generally considered the easiest way to check the data type of a value, while the "instanceof" operator is used to check if an object is an instance of a particular constructor function.
 The Object.prototype.toString method is a built-in method that returns a string representation of the object's data type, and you can define your own type-checking functions to check the data type of a value using any of these methods or other techniques.
 
-#### What are different datatypes in JavaScript?
+### What are different datatypes in JavaScript?
+[:top: Go to Top](#javascript-interview-questions)
 
 In JavaScript, there are several data types that can be used to represent different kinds of values:
 
@@ -833,7 +871,9 @@ Remember the following acronym:
 - B => Boolean
 - O => Object
 
-#### Explain Undefined Data types?
+### Explain Undefined Data types?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, the "undefined" data type represents a value that has not been assigned. When a variable is declared but not assigned a value, it is automatically assigned the value "undefined".
 
 Here is an example of how you can declare a variable and assign it the value "undefined":
@@ -864,7 +904,9 @@ The value "undefined" is different from the null value, which represents an inte
 It is generally considered a best practice to avoid using the undefined value in your code and to instead use null to represent an absence of value.
 You can use the "typeof" operator to determine if a value is "undefined".
 
-#### What is Null?
+### What is Null?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, the "null" data type represents an intentional absence of a value.
 It is different from the "undefined" value, which represents a value that has not been assigned.
 
@@ -896,7 +938,9 @@ console.log(myVariable === null); // logs "true"
 ```
 The null value is often used to represent an absent or unknown value, and is a useful tool for representing missing data in your code.
 
-#### Differentiate between Null and Undefined?
+### Differentiate between Null and Undefined?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, "null" and "undefined" are both primitive data types that represent the absence of a value.
 However, there are a few key differences between the two:
 
@@ -929,7 +973,9 @@ console.log(null === undefined); // logs "false"
 
 It is important to understand the differences between "null" and "undefined" in JavaScript, as they can behave differently in certain situations and can affect the behavior of your code. In general, it is a good idea to use "null" to represent an intentional absence of a value, and to use "undefined" only when a value has not been assigned.
 
-#### Explain Hoisting?
+### Explain Hoisting?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, "hoisting" refers to the behavior of variable declarations being moved to the top of their scope before code execution.
 
 Here is an example of how hoisting works:
@@ -958,7 +1004,9 @@ console.log(myVariable); // logs "undefined"
 myVariable = 'Hello';
 ```
 
-#### Are JavaScript initialization hoisted?
+### Are JavaScript initialization hoisted?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, only the declarations of variables and functions are hoisted to the top of their scope, not their assignments or initializations.
 
 For example:
@@ -986,7 +1034,9 @@ console.log(myVariable); // logs "undefined"
 myVariable = 'Hello';
 ```
 
-#### What are global variables?
+### What are global variables?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, global variables are variables that are defined outside of a function or block scope and are therefore available to be accessed and modified from anywhere in your code.
 
 Global variables are typically declared using the "var" keyword, like this:
@@ -1010,7 +1060,9 @@ window.myGlobalVariable = 'Hello';
 ```
 This is equivalent to using the "var" keyword, but is less commonly used.
 
-#### What are the issues with Global variables?
+### What are the issues with Global variables?
+[:top: Go to Top](#javascript-interview-questions)
+
 There are several issues with global variables in JavaScript that can make them a potentially dangerous feature of the language:
 
 1. Global variables are accessible from anywhere in your code, which can make it difficult to reason about the behavior of your code and can lead to unintended side effects.
@@ -1020,7 +1072,9 @@ There are several issues with global variables in JavaScript that can make them 
 
 To avoid these issues, it is generally considered a good practice to avoid using global variables in your code and to instead use local variables or function arguments to pass data between functions. This can help to improve the maintainability and reliability of your code.
 
-#### What happens when you declare variable with out VAR?
+### What happens when you declare variable with out VAR?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, when you declare a variable without using the "var" keyword, the variable is automatically created as a global variable, even if it is inside a function or block scope.
 
 For example:
@@ -1044,7 +1098,9 @@ function myFunction() {
 console.log(myVariable); // logs "undefined"
 ```
 
-#### What is Use Strict?
+### What is Use Strict?
+[:top: Go to Top](#javascript-interview-questions)
+
 "Use strict" is a directive that can be used to enable strict mode in JavaScript. Strict mode is a way to opt in to a "restricted" variant of JavaScript that makes it easier to write "secure" JavaScript.
 
 To use strict mode, you can include a "use strict" directive at the top of your code, like this:
@@ -1071,7 +1127,9 @@ Strict mode makes several changes to the way that JavaScript behaves, including:
 
 Using strict mode can help you to catch potential errors and bugs in your code, and can make your code more secure and reliable. It is generally considered a good practice to use strict mode in your code whenever possible.
 
-#### How to force developers to use Var keyword?
+### How to force developers to use Var keyword?
+[:top: Go to Top](#javascript-interview-questions)
+
 There is no way to force developers to use the "var" keyword in JavaScript, as JavaScript does not have a feature like "strict mode" that can be used to enforce this behavior.
 
 However, you can encourage developers to use the "var" keyword by establishing coding conventions and best practices for your team, and by reviewing and enforcing these conventions during code reviews.
@@ -1090,7 +1148,9 @@ function myFunction() {
 ```
 By using strict mode and establishing coding conventions, you can help to encourage the use of the "var" keyword and reduce the likelihood of unintended side effects and errors in your code.
 
-#### How can we handle Global Variables?
+### How can we handle Global Variables?
+[:top: Go to Top](#javascript-interview-questions)
+
 There are several ways to handle global variables in JavaScript:
 
 1. Avoid using global variables whenever possible.
@@ -1113,7 +1173,8 @@ Strict mode is a way to opt in to a "restricted" variant of JavaScript that make
 
 1. Consider using a module system like CommonJS or AMD to explicitly define and manage the dependencies between different parts of your code. This can help to reduce the reliance on global variables and can make your code more modular and easier to maintain.
 
-#### What are Closures?
+### What are Closures?
+[:top: Go to Top](#javascript-interview-questions)
 
 In JavaScript, a closure is a function that has access to the outer variables of a function in which it was created, even after the outer function has returned.
 
@@ -1135,7 +1196,9 @@ When the "addFive" function is called, it is able to access the value of "x" (5)
 Closures are a powerful feature of JavaScript and are often used to create functions that have access to private variables or to create helper functions that can be passed around and used in different contexts.
 They are an important concept to understand in JavaScript, and are widely used in modern JavaScript programming.
 
-#### Why do we need Closures?
+### Why do we need Closures?
+[:top: Go to Top](#javascript-interview-questions)
+
 Closures are useful in JavaScript for a number of reasons:
 
 1. Closures allow you to create functions that have access to private variables. This can be useful for creating encapsulated, self-contained units of code that can be easily reused and tested.
@@ -1148,7 +1211,9 @@ Closures are useful in JavaScript for a number of reasons:
 
 Overall, closures are an important and powerful feature of JavaScript that can be used to create more modular, reusable, and flexible code.
 
-#### Explain IIFE?
+### Explain IIFE?
+[:top: Go to Top](#javascript-interview-questions)
+
 An immediately-invoked function expression (IIFE, pronounced "iffy") is a JavaScript design pattern that allows you to define and execute a function immediately, as soon as it is defined.
 
 IIFEs are often used to create self-contained units of code that can be easily reused and tested, and to avoid creating global variables that could potentially cause naming conflicts or other unintended side effects.
@@ -1171,7 +1236,9 @@ You can also pass arguments to an IIFE, like this:
 ```
 IIFEs are a useful and commonly-used pattern in JavaScript, and can be a powerful tool for creating self-contained, reusable units of code.
 
-#### What is the use of IIFE?
+### What is the use of IIFE?
+[:top: Go to Top](#javascript-interview-questions)
+
 There are several uses for immediately-invoked function expressions (IIFEs) in JavaScript:
 
 1. IIFEs can be used to create self-contained units of code that can be easily reused and tested. By encapsulating your code inside an IIFE, you can avoid creating global variables that could potentially cause naming conflicts or other unintended side effects.
@@ -1184,7 +1251,9 @@ There are several uses for immediately-invoked function expressions (IIFEs) in J
 
 Overall, IIFEs are a useful and commonly-used pattern in JavaScript, and can be a powerful tool for creating self-contained, reusable units of code.
 
-#### What is name collision in global scope?
+### What is name collision in global scope?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, a name collision in the global scope occurs when two or more variables or functions in your code have the same name, and they overwrite or conflict with each other.
 
 Name collisions can occur in the global scope (i.e., outside of any function or block scope) when you declare global variables or functions without properly checking for existing variables or functions with the same name.
@@ -1210,7 +1279,8 @@ In this example, the second declaration of "myVar" and "myFunction" overwrite th
 
 To avoid name collisions in the global scope, it is a good practice to properly namespace your variables and functions and to use unique, descriptive names that are unlikely to conflict with other variables or functions. You can also use strict mode to catch and prevent the use of implicit global variables (variables that are not declared with the "var" keyword).
 
-#### IIFE vs Normal Function?
+### IIFE vs Normal Function?
+[:top: Go to Top](#javascript-interview-questions)
 
 An immediately-invoked function expression (IIFE) is a function that is defined and immediately executed as soon as it is defined. A normal function is a function that is defined and can be called at a later point in your code.
 
@@ -1236,7 +1306,9 @@ IIFEs are often used to create self-contained units of code that can be easily r
 
 Overall, both IIFEs and normal functions are useful and commonly-used patterns in JavaScript, and can be used to create modular, reusable, and flexible code. The choice between using an IIFE or a normal function will depend on your specific needs and the requirements of your code.
 
-#### Which is the most used design pattern?
+### Which is the most used design pattern?
+[:top: Go to Top](#javascript-interview-questions)
+
 It is difficult to say which design pattern is the most used, as different design patterns are used in different contexts and for different purposes.
 
 However, some of the most commonly used design patterns in JavaScript include:
@@ -1253,7 +1325,9 @@ However, some of the most commonly used design patterns in JavaScript include:
 
 Overall, the choice of which design pattern to use will depend on the specific needs and requirements of your code, and there is no "one size fits all" design pattern that is suitable for all situations.
 
-#### What is module Pattern and revealing module pattern?
+### What is module Pattern and revealing module pattern?
+[:top: Go to Top](#javascript-interview-questions)
+
 The module pattern is a design pattern in JavaScript that is used to create self-contained, reusable units of code. It is based on the idea of creating a single object that contains all of the functions and variables needed for a specific task or module, and exposing only the functions and variables that should be available to the outside world.
 
 Here is an example of the module pattern in JavaScript:
@@ -1304,7 +1378,9 @@ In this example, the "publicFunction" is exposed and can be called from the outs
 
 Both the module pattern and the revealing module pattern are useful for creating self-contained, reusable units of code, and can help to avoid naming conflicts and other unintended side effects. The choice between using the module pattern or the revealing module pattern will depend on your specific needs and the requirements of your code.
 
-#### What are the various ways to create JavaScript objects?
+### What are the various ways to create JavaScript objects?
+[:top: Go to Top](#javascript-interview-questions)
+
 There are several ways to create objects in JavaScript:
 
 The object literal syntax is a simple and concise way to create objects. With the object literal syntax, you can create an object by enclosing a comma-separated list of key-value pairs in curly braces {}.
@@ -1378,7 +1454,9 @@ const john = new Person("John Doe", 32, "USA");
 john.greet();
 ```
 
-#### How can we do inheritance in JavaScript?
+### How can we do inheritance in JavaScript?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, you can use the prototype chain to implement inheritance. With the prototype chain, you can create an object that inherits from another object by linking the prototype of the new object to the existing object.
 
 Here is an example of how you can use the prototype chain to implement inheritance in JavaScript:
@@ -1430,7 +1508,9 @@ derivedObject.sayGoodbye(); // logs 'Goodbye'
 ```
 Overall, there are several ways to implement inheritance in JavaScript, and the choice of which method to use will depend on your specific needs and the requirements of your code.
 
-#### What is prototype in JavaScript?
+### What is prototype in JavaScript?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, a prototype is an object that is associated with every function and object, and that serves as a fallback source of properties. When you access a property of an object, the JavaScript runtime will first check the object itself for the property, and if it is not found, it will check the object's prototype for the property. This process is called prototype inheritance.
 
 For example:
@@ -1455,7 +1535,9 @@ The prototype of an object is itself an object, and it can have its own prototyp
 
 Overall, the prototype is an important concept in JavaScript, and it is used to implement inheritance and to add shared properties and methods to objects.
 
-#### Explain Prototype chaining?
+### Explain Prototype chaining?
+[:top: Go to Top](#javascript-interview-questions)
+
 Prototype chaining is a technique in JavaScript that allows you to create a hierarchy of objects that inherit properties from each other through the prototype chain.
 
 Every function and object in JavaScript has a prototype, which is an object that serves as a fallback source of properties. When you access a property of an object, the JavaScript runtime will first check the object itself for the property, and if it is not found, it will check the object's prototype for the property. This process is called prototype inheritance.
@@ -1484,7 +1566,8 @@ Prototype chaining allows you to create a hierarchy of objects, with each object
 
 Overall, prototype chaining is an important technique in JavaScript, and it is used to implement inheritance and to add shared properties and methods to objects.
 
-#### What is Let Keyword?
+### What is Let Keyword?
+[:top: Go to Top](#javascript-interview-questions)
 
 The "let" keyword is a new keyword in JavaScript that is used to declare variables. It is similar to the "var" keyword, but there are some key differences between the two.
 
@@ -1520,7 +1603,9 @@ In this example, the "x" variable is declared with "let" and is then re-declared
 
 Overall, the "let" keyword is a useful addition to JavaScript, and it provides a more flexible and powerful way to declare variables than the "var"
 
-#### Are Let variables hoisted?
+### Are Let variables hoisted?
+[:top: Go to Top](#javascript-interview-questions)
+
 No, "let" variables are not hoisted in JavaScript.
 
 In JavaScript, "hoisting" is the process of moving declarations to the top of the current scope. Declarations made with the "var" keyword are hoisted to the top of the current scope, which means that you can use a "var" variable before it is declared.
@@ -1545,7 +1630,9 @@ In this example, the "x" variable is declared with "let" and is not initialized 
 
 Overall, the "let" keyword provides a more flexible and powerful way to declare variables than the "var" keyword, but it does not have the same hoisting behavior. It is important to be aware of the differences between "let" and "var", and to use the appropriate keyword for your specific needs.
 
-#### Explain Temporal Dead Zone?
+### Explain Temporal Dead Zone?
+[:top: Go to Top](#javascript-interview-questions)
+
 The temporal dead zone (TDZ) is a concept in JavaScript that refers to the period of time during which a "let" or "const" variable is declared, but not yet initialized.
 
 In JavaScript, "let" and "const" variables are block-scoped, which means that they are only accessible within the block in which they are declared. When you declare a "let" or "const" variable, it is not initialized until the line of code in which it is declared is executed. This means that you cannot access the value of a "let" or "const" variable before it is initialized.
@@ -1563,7 +1650,9 @@ The period of time during which a "let" or "const" variable is declared, but not
 
 Overall, the temporal dead zone is an important concept in JavaScript, and it is important to be aware of it when working with "let" and "const" variables. It is important to initialize "let" and "const" variables as soon as they are declared, in order to avoid any issues with the temporal dead zone.
 
-#### What is class in ES6?
+### What is class in ES6?
+[:top: Go to Top](#javascript-interview-questions)
+
 In ECMAScript 6 (also known as ECMAScript 2015), a "class" is a new feature that provides a simple and familiar syntax for defining constructor functions and creating objects.
 
 A class is defined using the "class" keyword, followed by the name of the class and a pair of curly braces. The body of the class defines the properties and methods of the class.
@@ -1592,7 +1681,9 @@ To create an object from a class, you use the "new" operator followed by the nam
 
 Overall, the "class" syntax in ECMAScript 6 provides a simpler and more familiar way to define constructor functions and create objects in JavaScript. It is a useful addition to the language, and it is widely used in modern JavaScript development.
 
-#### So with class Keyword does it imply JavaScript is a OOP language?
+### So with class Keyword does it imply JavaScript is a OOP language?
+[:top: Go to Top](#javascript-interview-questions)
+
 The "class" keyword in ECMAScript 6 (also known as ECMAScript 2015) provides a simple and familiar syntax for defining constructor functions and creating objects, and it is often used in object-oriented programming (OOP) in JavaScript. However, JavaScript is not a fully object-oriented language in the same way that languages like Java and C# are.
 
 JavaScript is a prototype-based language, which means that it uses prototypes to define object behavior. In a prototype-based language, objects can inherit properties and methods from other objects through the prototype chain. This is different from a class-based language, in which objects inherit from classes and classes define the structure and behavior of objects.
@@ -1601,7 +1692,9 @@ The "class" syntax in ECMAScript 6 provides a more familiar and simpler way to d
 
 Overall, while the "class" syntax in ECMAScript 6 is often used in OOP in JavaScript, it is important to understand that JavaScript is not a fully class-based language like Java or C#. It is a prototype-based language that uses prototypes to define object behavior and inheritance.
 
-#### Differentiate between class and normal function?
+### Differentiate between class and normal function?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, a "class" is a type of function that is defined using the "class" keyword in ECMAScript 6 (also known as ECMAScript 2015). A normal function is a function that is defined using the "function" keyword or as an arrow function.
 
 There are several key differences between classes and normal functions in JavaScript:
@@ -1613,7 +1706,8 @@ There are several key differences between classes and normal functions in JavaSc
 
 Overall, there are several key differences between classes and normal functions in JavaScript. It is important to understand these differences, and to use the appropriate type of function for your specific needs.
 
-#### What is a Arrow function?
+### What is a Arrow function?
+[:top: Go to Top](#javascript-interview-questions)
 
 An arrow function is a type of function in JavaScript that is defined using the "=>" syntax. Arrow functions are shorter and more concise than regular function expressions, and they have a different "this" binding than regular functions.
 
@@ -1634,7 +1728,9 @@ Arrow functions also have a different "this" binding than regular functions. In 
 
 Overall, arrow functions are a useful and concise way to define functions in JavaScript, and they are widely used in modern JavaScript development. It is important to understand their syntax and behavior, and to use them appropriately in your code.
 
-#### Why do we use Arrow function?
+### Why do we use Arrow function?
+[:top: Go to Top](#javascript-interview-questions)
+
 Arrow functions are used in JavaScript for several reasons, including:
 
 - Concise syntax: Arrow functions are shorter and more concise than regular function expressions, because they do not have a "function" keyword, a pair of parentheses around the arguments, or a pair of curly braces around the function body. This makes them easier to read and write, especially for simple functions that only have a single statement in their body.
@@ -1643,7 +1739,9 @@ Arrow functions are used in JavaScript for several reasons, including:
 
 Overall, arrow functions are a useful and widely used feature of JavaScript, and they can make your code more concise, readable, and easier to work with. It is important to understand their syntax and behavior, and to use them appropriately in your code.
 
-#### Does Arrow function create its own this?
+### Does Arrow function create its own this?
+[:top: Go to Top](#javascript-interview-questions)
+
 No, an arrow function does not create its own "this" value. The "this" value in an arrow function is determined by the context in which the arrow function is defined, rather than by the object that calls the function.
 
 In a regular function, the "this" keyword is dynamically bound to the object that calls the function. This means that the "this" value can change depending on how the function is called.
@@ -1690,7 +1788,9 @@ In this example, the "greet" function is defined as an arrow function, and it lo
 
 Overall, it is important to understand the difference between the dynamic "this" binding of regular functions and the lexical "this" binding of arrow functions. This can help you write code that relies on the "this" value more effectively and with fewer unexpected results.
 
-#### Explain Synchronous execution?
+### Explain Synchronous execution?
+[:top: Go to Top](#javascript-interview-questions)
+
 In JavaScript, synchronous execution means that code is executed in the order that it appears, one statement at a time. When a JavaScript program runs, it starts at the top of the file and executes each statement in order, from top to bottom.
 
 For example:
@@ -1707,7 +1807,9 @@ To avoid these issues, you can use asynchronous programming techniques, such as 
 
 Overall, it is important to understand synchronous execution in JavaScript, and to use appropriate asynchronous programming techniques to avoid delays and performance issues in your code.
 
-#### What is a call Stack?
+### What is a call Stack?
+[:top: Go to Top](#javascript-interview-questions)
+
 A call stack is a data structure that stores information about the current state of a program's function calls. It is used to keep track of the current function being executed, as well as the functions that called it and the functions that it will call.
 
 In JavaScript, the call stack is used to store information about the execution context of each function call. An execution context is an object that contains information about the current state of a function's execution, including the values of its variables and the current location in the code.
@@ -1741,7 +1843,9 @@ The call stack is used to keep track of the current function being executed, as 
 Overall, it is important to understand how the call stack works, because it can affect the behavior of your code, especially when dealing with recursive functions or long-running operations.
 
 
-#### What is a blocking call?
+### What is a blocking call?
+[:top: Go to Top](#javascript-interview-questions)
+
 A blocking call is a type of function call that stops the execution of the program until it completes. In JavaScript, blocking calls are typically used to perform synchronous operations, such as reading or writing to a file, or making a network request.
 
 Blocking calls can be useful in certain situations, because they allow you to perform synchronous operations in a simple and straightforward way. However, they can also cause delays and performance issues, because they block the execution of the rest of the program until they complete.
@@ -1767,7 +1871,9 @@ To avoid these issues, you can use asynchronous programming techniques, such as 
 
 Overall, it is important to understand the difference between blocking and non-blocking calls in JavaScript, and to use appropriate asynchronous programming techniques to avoid delays and performance issues in your code.
 
-#### How to avoid blocking calls?
+### How to avoid blocking calls?
+[:top: Go to Top](#javascript-interview-questions)
+
 To avoid blocking calls in JavaScript, you can use asynchronous programming techniques, such as using callbacks, promises, or async/await.
 
 A callback is a function that is passed as an argument to another function, and is executed after the other function has completed. Callbacks allow you to execute code asynchronously, by passing a function to be called later, rather than blocking the execution of the program until the function completes.
@@ -1812,7 +1918,9 @@ console.log('End');
 ```
 In this example, the "readFile" function returns a promise that represents the result of the file reading operation. The "then" method of the promise is used to specify a callback function that will be executed when the operation completes successfully, and the "catch" method is used to specify a callback function that will be executed if the operation fails. The "readFile" function returns immediately, and the execution of the program continues, logging the "End" message to the console. When the file has been read, the appropriate callback function is executed, and the contents of the file are logged to the console.
 
-#### Explain Asynchronous execution?
+### Explain Asynchronous execution?
+[:top: Go to Top](#javascript-interview-questions)
+
 Asynchronous execution is a type of execution in which code is executed concurrently, rather than sequentially. In JavaScript, asynchronous execution is used to perform long-running operations, such as making network requests or reading and writing to files, without blocking the execution of the rest of the program.
 
 There are several ways to execute code asynchronously in JavaScript, including using callbacks, promises, and async/await.
@@ -1860,7 +1968,9 @@ In this example, the "readFile" function returns a promise that represents the r
 
 Async/await is another way to execute code asynchronously
 
-#### Synch vs Asynch?
+### Synch vs Asynch?
+[:top: Go to Top](#javascript-interview-questions)
+
 Synchronous execution means that code is executed in the order that it appears, one statement at a time. When a JavaScript program runs, it starts at the top of the file and executes each statement in order, from top to bottom.
 
 For example:
@@ -1899,7 +2009,9 @@ In this example, the "readFile" function is a non-blocking call that reads the c
 
 Overall, it is important to understand the difference between synchronous and asynchronous execution in JavaScript, and to use appropriate asynchronous programming techniques to avoid delays and performance issues in your code.
 
-#### How can we do Asynch calls?
+### How can we do Asynch calls?
+[:top: Go to Top](#javascript-interview-questions)
+
 There are several ways to execute code asynchronously in JavaScript, including using callbacks, promises, and async/await.
 
 A callback is a function that is passed as an argument to another function, and is executed after the other function has completed. Callbacks allow you to execute code asynchronously, by passing a function to be called later, rather than blocking the execution of the program until the function completes.
@@ -1968,7 +2080,8 @@ readFile();
 
 In this example, the "readFile" function is an async function that reads the contents of a file from the file system using the "await" keyword. When the "await" keyword is encountered, the execution of the function is paused until the asynchronous operation completes. The "readFile" function returns a promise, and the resolved value of the promise is stored in the "data" variable. The execution of the function is then resumed
 
-#### What is a thread?
+### What is a thread?
+[:top: Go to Top](#javascript-interview-questions)
 
 A thread is a unit of execution that represents a flow of control within a program. It is a lightweight process that can be spawned by a program to perform a specific task, and can run concurrently with other threads within the same program.
 
@@ -1976,7 +2089,9 @@ Threads are useful for programs that need to perform multiple tasks concurrently
 
 In JavaScript, the concept of threads is not explicit, because the language is single-threaded. However, JavaScript programs can still take advantage of concurrency by using asynchronous programming techniques, such as callbacks, promises, and async/await. These techniques allow you to perform long-running operations, such as making network requests or reading and writing to files, without blocking the main thread of your program.
 
-#### Explain Multi-threading?
+### Explain Multi-threading?
+[:top: Go to Top](#javascript-interview-questions)
+
 Multi-threading is a programming model that allows a program to perform multiple tasks concurrently, by creating and managing multiple threads of execution.
 
 In a multi-threaded program, each thread represents a separate flow of control within the program, and can execute independently of the other threads. This allows the program to perform multiple tasks concurrently, by dividing the tasks among the different threads.
@@ -1987,7 +2102,9 @@ However, it is important to carefully design and manage the threads in a multi-t
 
 In JavaScript, the concept of threads is not explicit, because the language is single-threaded. However, JavaScript programs can still take advantage of concurrency by using asynchronous programming techniques, such as callbacks, promises, and async/await. These techniques allow you to perform long-running operations, such as making network requests or reading and writing to files, without blocking the main thread of your program.
 
-#### Is JavaScript Multi-threaded?
+### Is JavaScript Multi-threaded?
+[:top: Go to Top](#javascript-interview-questions)
+
 No, JavaScript is a single-threaded language, which means that it can only execute one task at a time.
 
 In JavaScript, all code is executed in the main thread of the program, and the language does not provide any direct means of creating or managing additional threads. This means that JavaScript programs cannot perform multiple tasks concurrently, in the sense of executing them simultaneously on different CPU cores.
@@ -1996,7 +2113,9 @@ However, JavaScript programs can still take advantage of concurrency by using as
 
 Overall, it is important to understand the single-threaded nature of JavaScript, and to use appropriate asynchronous programming techniques to avoid delays and performance issues in your code.
 
-#### Then how does Settimeout run?
+### Then how does Settimeout run?
+[:top: Go to Top](#javascript-interview-questions)
+
 The "setTimeout" function is a non-blocking function that is used to schedule a callback function to be executed after a specified delay.
 
 In JavaScript, the "setTimeout" function works by adding the callback function to the event loop, along with a timer that counts down the specified delay. When the timer reaches zero, the callback function is placed on the callback queue, and is executed by the main thread of the program when it becomes available.
@@ -2019,7 +2138,9 @@ In this example, the "setTimeout" function is called with a callback function an
 
 Overall, the "setTimeout" function is a useful tool for scheduling callback functions to be executed asynchronously in JavaScript, and can be used to avoid blocking the main thread of the program when performing long-running operations.
 
-#### What is a WebAPI/Browser API?
+### What is a WebAPI/Browser API?
+[:top: Go to Top](#javascript-interview-questions)
+
 A WebAPI, also known as a Browser API, is a set of programming interfaces that are built into web browsers, and allow web applications to access and interact with various resources and functionality on the client side.
 
 WebAPIs provide web developers with a way to access and manipulate various aspects of the web browser and the operating system it is running on, such as the DOM (Document Object Model), the file system, the network, and the hardware. This allows web applications to perform a wide range of tasks, such as reading and writing to the file system, making network requests, displaying notifications, and interacting with hardware devices such as cameras and microphones.
@@ -2034,7 +2155,9 @@ Some examples of WebAPIs include:
 
 WebAPIs are an important part of modern web development, because they allow web applications to perform tasks that were previously only possible with native applications. They also enable web developers to build more powerful and feature-rich applications, by providing access to a wide range of resources and functionality on the client side.
 
-#### What is a Event loop and callback queue?
+### What is a Event loop and callback queue?
+[:top: Go to Top](#javascript-interview-questions)
+
 The event loop and callback queue are key concepts in JavaScript that are used to manage the execution of asynchronous code.
 
 The event loop is a mechanism that continuously checks the callback queue for pending tasks, and executes them when the main thread of the program is idle. This allows asynchronous tasks to be executed in the background, without blocking the main thread of the program.
@@ -2056,7 +2179,9 @@ In this example, the "setTimeout" function is called with a callback function an
 
 Overall, the event loop and callback queue are important mechanisms that enable asynchronous programming in JavaScript, and allow web applications to perform tasks in the background without blocking the main thread of the program.
 
-#### What is promise?
+### What is promise?
+[:top: Go to Top](#javascript-interview-questions)
+
 A promise is an object in JavaScript that represents the result of an asynchronous operation. It is a placeholder for a value that may not be available yet, and allows you to write asynchronous code that looks and behaves like synchronous code.
 
 Promises have a state, which can be either "pending", "fulfilled", or "rejected". When a promise is "pending", it means that the asynchronous operation it represents has not yet completed. When the operation completes successfully, the promise is "fulfilled", and the resolved value is available. When the operation fails, the promise is "rejected", and the rejected value is available.
