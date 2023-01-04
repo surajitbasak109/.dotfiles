@@ -54,6 +54,7 @@ lvim.keys.normal_mode['<S-h>'] = ':BufferLineCyclePrev<CR>'
 -- -- Use which-key to add extra bindings with the leader-key prefix
 lvim.builtin.which_key.mappings['W'] = { '<cmd>noautocmd w<cr>', 'Save without formatting' }
 lvim.builtin.which_key.mappings['P'] = { '<cmd>Telescope projects<CR>', 'Projects' }
+vim.cmd(':tnoremap <Esc> <C-\\><C-n>')
 
 -- -- Change theme settings
 -- lvim.colorscheme = "lunar"
@@ -257,6 +258,36 @@ lvim.plugins = {
     },
     {
         'windwp/nvim-spectre',
+    },
+    {
+        'tpope/vim-surround',
+    },
+    {
+        'lervag/wiki.vim',
+        setup = function()
+            vim.g.wiki_root = '~/Documents/wiki'
+            vim.g.wiki_filetypes = { 'md' }
+            vim.g.wiki_link_extension = '.md'
+            vim.g.wiki_link_target_type = 'md'
+            vim.g.wiki_export = {
+                args = '--highlight-style=tango --template=eisvogel',
+                from_format = 'markdown',
+                ext = 'pdf',
+                view = true,
+                viewer = 'okular',
+            }
+        end,
+        cmd = {
+            'WikiEnable',
+            'WikiFzfPages',
+            'WikiFzfTags',
+            'WikiIndex',
+            'WikiJournal',
+            'WikiOpen',
+            'WikiReload',
+        },
+        event = 'BufReadPre ~/Documents/wiki/*.md',
+        keys = '<Leader>mw',
     },
 }
 
