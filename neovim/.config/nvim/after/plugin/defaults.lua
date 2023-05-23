@@ -9,6 +9,7 @@ vim.keymap.set('n', '<leader>ff', '<cmd>lua vim.lsp.buf.format()<CR>', { desc = 
 vim.keymap.set('n', '<leader>ft', '<cmd>Neotree toggle<cr><CR>', { desc = '[F]ile [T]ree' })
 vim.keymap.set('n', '<leader>gbt', '<cmd>GitBlameToggle<cr><CR>', { desc = '[G]it [B]lame [T]oggle' })
 vim.keymap.set('n', '<leader>sb', '<cmd>Telescope buffers<cr><CR>', { desc = '[S]earch [B]uffer' })
+vim.keymap.set('n', '<leader>lg', '<cmd>LazyGit<cr><CR>', { desc = '[L]azy [G]it' })
 
 -- Normal --
 -- Better window navigation
