@@ -43,7 +43,7 @@ export DOTFILES=${DOTFILES:-$HOME/.dotfiles}
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
 export TERM=${TERM:-xterm-256color}
 export COLORTERM=${COLORTERM:-truecolor}
-export EDITOR=$(which nvim)
+export EDITOR=$(which lvim)
 # export MANPAGER="nvim --clean +Man! +'setl noma' +'nn q :q!<CR>'"
 # export PAGER=bat
 

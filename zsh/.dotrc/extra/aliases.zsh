@@ -79,12 +79,16 @@ alias c='f() { cd $1 && clear && pwd && ls -lht };f'
 alias w='clear && curl "wttr.in/?pq"'
 alias m='clear && curl "wttr.in/moon?pq"'
 alias ignore='curl https://www.gitignore.io/api/vim,node,data,emacs,python,pycharm,executable,sublimetext,visualstudio,visualstudiocode > .gitignore'
-alias cat=batcat
+alias cat=bat
 
 alias tls=tmux ls
 alias ta='tmux attach -t "$(tmux ls | cut -d : -f1 | fzf)"'
 alias sa='bash ~/.machines/"$(ls ~/.machines | fzf)"'
 alias tn='tmux new -s $1'
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+
+alias docker_perm='sudo chmod 777 /var/run/docker.sock'
+alias docker_restart='sudo service docker restart'
 
 
 # open_with_fzf() {
@@ -99,4 +103,4 @@ alias tn='tmux new -s $1'
 #
 #
 
-source $HOME/.local/share/zinit/plugins/tj---git-extras/etc/git-extras-completion.zsh
+# source $HOME/.local/share/zinit/plugins/tj---git-extras/etc/git-extras-completion.zsh
